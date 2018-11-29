@@ -1,13 +1,14 @@
-from resourcedetector import ResourceDetector
-import argparse
-import imutils
-import cv2
-
 '''
 This application takes care of listing valid resources in one image
 @since 27-11-2018
 @author amit.dali@gmail.com
 '''
+
+from resourcedetector import ResourceDetector
+from providers.aws import DeployTemplate
+import argparse
+import imutils
+import cv2
 
 default_width=300
 
@@ -63,6 +64,11 @@ def getResources(args):
 
 def main():
 	inputs = getInputs()
-	getResources(inputs)
+	resources = getResources(inputs)
+	deployTemplate = DeployTemplate()
+	for resource in resources:
+		if(resource == "compute"):
+			deployTemplate.createStack()
+		
 
 main()

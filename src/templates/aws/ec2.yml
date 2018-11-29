@@ -1,0 +1,5 @@
+BlueprintBuddyInstance:
+  Type: AWS::EC2::Instance
+  Properties:
+    AvailabilityZone: eu-west-1
+    ImageId: ami-031a3db8bacbcdc20
