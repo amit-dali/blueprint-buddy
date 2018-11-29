@@ -16,7 +16,7 @@ class ResourceDetector:
 			(x, y, w, h) = cv2.boundingRect(approx)
 			ar = w / float(h)
 
-			resource = "compute" if ar >= 0.95 and ar <= 1.05 else "firewall"
+			resource = "firewall" if ar >= 0.95 and ar <= 1.05 else "compute"
 
 		elif len(approx) == 5:
 			resource = "storage"

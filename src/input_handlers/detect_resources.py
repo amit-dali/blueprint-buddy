@@ -5,7 +5,7 @@ This application takes care of listing valid resources in one image
 '''
 
 from resourcedetector import ResourceDetector
-from providers.aws import DeployTemplate
+from deploytemplate import DeployTemplate
 import argparse
 import imutils
 import cv2
@@ -70,5 +70,4 @@ def main():
 		if(resource == "compute"):
 			deployTemplate.createStack()
 		
-
 main()
