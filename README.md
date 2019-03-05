@@ -1,4 +1,4 @@
-# Blueprint-Buddy [PoC]
+# Blueprint-Buddy
 Current code is just a start of PoC
 
 Following are TODO cases:
