@@ -1,4 +1,4 @@
-# Blueprint-Buddy
+# Blueprint-Buddy [PoC]
 <p>
 Blueprint Buddy is a library/application to create virtual resources in public clouds providers such as AWS, AzureRM and Google.
 </p>
